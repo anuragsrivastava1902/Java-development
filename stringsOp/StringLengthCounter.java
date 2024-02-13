@@ -1,6 +1,6 @@
 package stringsOp;
 
-public class Counter {
+public class StringLengthCounter {
 
 	public static void main(String[] args) {
 		String str = "My name isAnurag ivastava";
