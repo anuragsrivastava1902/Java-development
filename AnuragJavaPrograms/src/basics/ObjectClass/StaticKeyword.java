@@ -20,7 +20,7 @@ class Person{
 	
 	String name;
 	int age;
-	static String religion="hindu";
+	static String religion="indian";
 	static int count=0;
 	
 	void displayDetails() {
