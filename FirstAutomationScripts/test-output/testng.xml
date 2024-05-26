@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+     <!-- <class name="sdet.FirstTest"/>
+       <class name="sdet.SecondTest"/>-->
+       <class name="sdet.BeforeMethodCheck">
+		<methods>
+			<include name="test1" />
+			<include name="test2" />
+		</methods> 
+	   </class>
+       
+       <class name="sdet.BeforeMethodCheck2">
+		<methods>
+			<include name="test3" />
+			<include name="test4" />
+		</methods> 
+	   </class>
+	   
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

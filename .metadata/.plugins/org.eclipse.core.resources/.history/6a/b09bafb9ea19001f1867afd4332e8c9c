@@ -1,0 +1,17 @@
+package sdetSelenium;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class HandleCheckboxes {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver","C://users//anurag//eclipse//chromedriver.exe");
+		WebDriver dr = new ChromeDriver();
+		
+		
+		dr.get("https://testautomationpractice.blogspot.com/");
+		dr.manage().window().maximize();
+	}
+
+}

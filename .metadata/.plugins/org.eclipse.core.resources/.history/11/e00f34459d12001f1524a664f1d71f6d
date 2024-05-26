@@ -1,0 +1,18 @@
+package sdet;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class DataProviderExample {
+
+	@DataProvider(name="loginData")
+	public Object[][] getData(){
+		Object[][] data = {{"anurag@gamil.com","anurag"},{"shivam@gmail.com","shivam"},{"dhananjay@gmail.com","dhananjay"}};
+		return data;
+	}
+	
+	@Test(dataProvider="loginData")
+	void loginTest(String email, String pass) {
+		System.out.println(email+" : "+pass);
+	}
+}

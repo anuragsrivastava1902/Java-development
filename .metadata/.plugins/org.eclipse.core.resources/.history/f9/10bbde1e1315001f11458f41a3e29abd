@@ -1,0 +1,11 @@
+package parallelTesting;
+
+public class javaSleep {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver","C://Users//anurag//eclips//chromedriver.exe");
+		WebDriver dr = new ChromeDriver();
+
+	}
+
+}

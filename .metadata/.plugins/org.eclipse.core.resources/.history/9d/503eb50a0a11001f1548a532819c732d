@@ -1,0 +1,25 @@
+package sdet;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class AssertionsExample {
+	
+	WebDriver dr;
+	
+	@BeforeTest
+	void setup() {
+		
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Anurag\\eclipse\\chromedriver.exe");
+		dr = new ChromeDriver();
+		dr.get("https://demo.guru99.com/");
+	}
+	
+	@Test(dependsOnMethods= {"setup"},enabled=false)
+	void loginTest() {
+		dr.findElement(By.xpath("/html/body/form/table/tbody/tr[5]/td[2]/input"));
+	}
+}

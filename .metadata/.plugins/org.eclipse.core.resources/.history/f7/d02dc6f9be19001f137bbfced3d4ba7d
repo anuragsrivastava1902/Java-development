@@ -1,0 +1,15 @@
+package assignment;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Assignment1 {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver","C://users//anurag//eclipse//chromedriver.exe");
+		WebDriver dr = new ChromeDriver();
+		
+		dr.get("https://testautomationpractice.blogspot.com/");
+	}
+
+}

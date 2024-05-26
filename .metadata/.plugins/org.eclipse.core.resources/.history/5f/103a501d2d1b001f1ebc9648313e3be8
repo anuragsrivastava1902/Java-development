@@ -1,0 +1,11 @@
+package basics;
+
+public class StringProgram {
+
+	public static void main(String[] args) {
+		char[] ch= {'a','n','u','r','a','g'};
+		String s = new String(ch);
+		System.out.println(s);
+	}
+
+}
